@@ -6,6 +6,7 @@
 /obj/Debug
 *.DotSettings
 *.nupkg
+*.ps
 /nuget.exe
 *.csproj.vspscc
 App.config
