@@ -18,9 +18,13 @@ public class Service1 : DbManagementService
     {
         // Add one record to the context     
         Context.Table1.Add(...);
+        
+        // Return the number of records affected
         return 1;
     }
 }
+
+public class Service2 : Service1 { }
 ```
 ### Console implementation:
 The ```DbManagementController``` should be used wrapped in a ```using``` block. Services can be added to the controller by calling the ```Message(...)``` method. These services are added to the controller's queue and invoked consecutively when the controller's ```Invoke()``` method is called.
@@ -32,8 +36,13 @@ public static void Main()
 {
     using (DbManagementController controller = new DbManagementController(new DbContext()))
     {
+        // Add one service to the controller
         controller.Message("Execute first update service?", Service1());
+        
+        // Add a second service to the controller
         controller.Message("Execute second update service?", Service2());
+        
+        // Invoke the services
         controller.Invoke();
     }
 }
