@@ -1,2 +1,2 @@
 # DatabaseManagementApi
-C# API for implementing a database management console to execute queued tasks.
+C# framework for executing queued database management tasks.
