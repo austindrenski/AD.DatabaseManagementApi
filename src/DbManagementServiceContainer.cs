@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using JetBrains.Annotations;
 
-namespace DatabaseManagementApi
+namespace AD.DatabaseManagementApi
 {
     [PublicAPI]
     public sealed class DbManagementServiceContainer : IDisposable

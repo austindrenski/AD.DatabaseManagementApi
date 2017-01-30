@@ -2,7 +2,7 @@
 using System.Data.Entity;
 using JetBrains.Annotations;
 
-namespace DatabaseManagementApi
+namespace AD.DatabaseManagementApi
 {
     [PublicAPI]
     public abstract class DbManagementService

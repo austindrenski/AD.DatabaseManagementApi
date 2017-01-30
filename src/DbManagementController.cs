@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using JetBrains.Annotations;
 
-namespace DatabaseManagementApi
+namespace AD.DatabaseManagementApi
 {
     [PublicAPI]
     public class DbManagementController : IDisposable

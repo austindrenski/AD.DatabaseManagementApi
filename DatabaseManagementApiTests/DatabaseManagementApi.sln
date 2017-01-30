@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseManagementApiTests", "DatabaseManagementApiTests\DatabaseManagementApiTests.csproj", "{C2A69B03-678A-4D65-947C-183BB5E69BE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AD.DatabaseManagementApi.Tests", "DatabaseManagementApiTests\AD.DatabaseManagementApi.Tests.csproj", "{C2A69B03-678A-4D65-947C-183BB5E69BE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseManagementApi", "..\DatabaseManagementApi.csproj", "{D0D9E192-C669-4C67-A9E9-D474907888CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AD.DatabaseManagementApi", "..\AD.DatabaseManagementApi.csproj", "{D0D9E192-C669-4C67-A9E9-D474907888CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

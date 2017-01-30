@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DatabaseManagementApi")]
+[assembly: AssemblyTitle("AD.DatabaseManagementApi")]
 [assembly: AssemblyDescription("C# framework for executing queued database management tasks.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Austin Drenski")]
-[assembly: AssemblyProduct("DatabaseManagementApi")]
+[assembly: AssemblyProduct("AD.DatabaseManagementApi")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

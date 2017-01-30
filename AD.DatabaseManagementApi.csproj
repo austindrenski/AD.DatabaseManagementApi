@@ -7,8 +7,8 @@
     <ProjectGuid>{D0D9E192-C669-4C67-A9E9-D474907888CE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DatabaseManagementApi</RootNamespace>
-    <AssemblyName>DatabaseManagementApi</AssemblyName>
+    <RootNamespace>AD.DatabaseManagementApi</RootNamespace>
+    <AssemblyName>AD.DatabaseManagementApi</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
