@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DatabaseManagementApi</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Austin Drenski</authors>
+    <owners>Austin Drenski</owners>
+    <licenseUrl>https://github.com/austindrenski/DatabaseManagementApi/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# framework for executing queued database management tasks.</description>
+    <releaseNotes>Initial publication.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>database management tasks framework</tags>
+  </metadata>
+</package>
