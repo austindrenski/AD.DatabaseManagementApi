@@ -8,6 +8,7 @@ PM> Install-Package DatabaseManagementApi
 The ```DbManagementController``` should be used wrapped in a ```using``` block. Services can be added to the controller by calling the ```Message(...)``` method. These services are added to the controller's queue and invoked consecutively when the controller's ```Invoke()``` method is called.
 
 A service class inherits from ```DbManagementService```. The database work should be performed inside of the overridden ```Invoke()``` method. This method should return the number of records that were modified. This number will be written to the standard output.
+### Console:
 ```C#
 using System.Data.Entity
 using DatabaseManagementApi;
@@ -44,7 +45,7 @@ public class Service1 : DbManagementService
 public class Service2 : Service1 { }
 
 ```
-### Console output:
+### Output:
 ```
 Executing services at 12:00 PM. Please wait...
 
