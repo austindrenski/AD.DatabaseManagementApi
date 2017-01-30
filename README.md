@@ -1,8 +1,8 @@
-# DatabaseManagementApi
+# AD.DatabaseManagementApi
 C# framework for executing queued database management tasks.
 ## Install from NuGet:
 ```
-PM> Install-Package DatabaseManagementApi
+PM> Install-Package AD.DatabaseManagementApi
 ```
 ## Example:
 The ```DbManagementController``` should be used wrapped in a ```using``` block. Services can be added to the controller by calling the ```Message(...)``` method. These services are added to the controller's queue and invoked consecutively when the controller's ```Invoke()``` method is called.
@@ -11,7 +11,7 @@ A service class inherits from ```DbManagementService```. The database work shoul
 ### Console:
 ```C#
 using System.Data.Entity
-using DatabaseManagementApi;
+using AD.DatabaseManagementApi;
 
 public static void Main()
 {
