@@ -1,6 +1,5 @@
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\bin\Debug\DatabaseManagementApiTests.dll
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\bin\Debug\DatabaseManagementApiTests.pdb
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\obj\Debug\AD.DatabaseManagementApi.Tests.csprojResolveAssemblyReference.cache
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\obj\Debug\DatabaseManagementApiTests.dll
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\DatabaseManagementApiTests\DatabaseManagementApiTests\obj\Debug\DatabaseManagementApiTests.pdb
