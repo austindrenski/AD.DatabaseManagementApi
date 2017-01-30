@@ -5,29 +5,9 @@ C# framework for executing queued database management tasks.
 PM> Install-Package DatabaseManagementApi
 ```
 ## Example:
-### Service implementation:
-A service class inherits from ```DbManagementService```. The database work should be performed inside of the overridden ```Invoke()``` method. This method should return the number of records that were modified. This number will be written to the standard output.
-```C#
-using DatabaseManagementApi;
-
-public class Service1 : DbManagementService
-{
-    public ComtradeMetadataService(DbContext context) : base(context) { }
-
-    protected override int Invoke()
-    {
-        // Add one record to the context     
-        Context.Table1.Add(...);
-        
-        // Return the number of records affected
-        return 1;
-    }
-}
-
-public class Service2 : Service1 { }
-```
-### Console implementation:
 The ```DbManagementController``` should be used wrapped in a ```using``` block. Services can be added to the controller by calling the ```Message(...)``` method. These services are added to the controller's queue and invoked consecutively when the controller's ```Invoke()``` method is called.
+
+A service class inherits from ```DbManagementService```. The database work should be performed inside of the overridden ```Invoke()``` method. This method should return the number of records that were modified. This number will be written to the standard output.
 ```C#
 using System.Data.Entity
 using DatabaseManagementApi;
@@ -46,6 +26,23 @@ public static void Main()
         controller.Invoke();
     }
 }
+
+public class Service1 : DbManagementService
+{
+    public ComtradeMetadataService(DbContext context) : base(context) { }
+
+    protected override int Invoke()
+    {
+        // Add one record to the context     
+        Context.Table1.Add(...);
+        
+        // Return the number of records affected
+        return 1;
+    }
+}
+
+public class Service2 : Service1 { }
+
 ```
 ### Console output:
 ```
