@@ -5,6 +5,7 @@
 /bin/Debug
 /obj/Debug
 *.DotSettings
+*.DotSettings.user
 *.nupkg
 *.ps1
 *.psd1
@@ -14,3 +15,5 @@
 *.csproj.vspscc
 App.config
 app.config
+*.nupkg
+*.suo
