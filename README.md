@@ -1,7 +1,7 @@
 # AD.DatabaseManagementApi
 C# framework for executing queued database management tasks.
 ## Install from NuGet:
-```
+```Powershell
 PM> Install-Package AD.DatabaseManagementApi
 ```
 ## Example:
