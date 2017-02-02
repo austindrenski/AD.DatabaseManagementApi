@@ -6,3 +6,12 @@ C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\bin\Release\Entity
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\bin\Release\JetBrains.Annotations.xml
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.dll
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.pdb
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\AD.DatabaseManagementApi.XML
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\AD.DatabaseManagementApi.dll
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\AD.DatabaseManagementApi.pdb
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\EntityFramework.dll
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\JetBrains.Annotations.dll
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\EntityFramework.xml
+C:\Source\Repos\AD.DatabaseManagementApi\bin\Release\JetBrains.Annotations.xml
+C:\Source\Repos\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.dll
+C:\Source\Repos\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.pdb
