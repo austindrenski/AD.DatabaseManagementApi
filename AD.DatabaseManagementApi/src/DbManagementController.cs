@@ -11,12 +11,12 @@ namespace AD.DatabaseManagementApi
     {
         private readonly DbContext _context;
 
-        private readonly IList<DbManagementServiceContainer> _services;
+        private readonly IEnumerable<DbManagementServiceContainer> _services;
 
         public DbManagementController(DbContext context, IEnumerable<Func<DbManagementServiceContainer>> services) 
         {
             _context = context;
-            _services = services.Select(x => x()).ToList();
+            _services = services.Select(x => x());
         }
 
         public void Invoke()
@@ -25,11 +25,12 @@ namespace AD.DatabaseManagementApi
             DateTime currentTime = DateTime.Now;
             Console.WriteLine(); 
             Console.WriteLine($@"Executing services at {startTime.ToShortTimeString()}. Please wait...");
+            int total = _services.Count();
             int index = 1;
             foreach (DbManagementServiceContainer service in _services)
             {
                 Console.WriteLine();
-                Console.WriteLine($@"> Starting service {index++} of {_services.Count} at {currentTime}: {service.Name}.");
+                Console.WriteLine($@"> Starting service {index++} of {total} at {currentTime}: {service.Name}.");
 
                 int count = service.Invoke(_context);
 
@@ -39,7 +40,7 @@ namespace AD.DatabaseManagementApi
             }
 
             Console.WriteLine();
-            Console.WriteLine($@"Completed {_services.Count} services in {(DateTime.Now - startTime).TotalMinutes:0.00} minutes. Press enter to exit...");
+            Console.WriteLine($@"Completed {total} services in {(DateTime.Now - startTime).TotalMinutes:0.00} minutes. Press enter to exit...");
 
             while (Console.ReadKey().Key != ConsoleKey.Enter)
             {

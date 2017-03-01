@@ -21,7 +21,7 @@ namespace AD.DatabaseManagementApi
         }
 
 
-        public Func<DbManagementServiceContainer> AddMessage(string message, DbManagementServiceContainer serviceContainer)
+        public DbManagementControllerBuilder AddMessage(string message, DbManagementServiceContainer serviceContainer)
         {
             Func<DbManagementServiceContainer> action =  () =>
             {
@@ -40,10 +40,11 @@ namespace AD.DatabaseManagementApi
                 }
                 return serviceContainer;
             };
-            return action;
+            _messages.Add(action);
+            return this;
         }
 
-        public Func<DbManagementServiceContainer> AddMessage(string message, string year, DbManagementServiceContainer serviceContainer)
+        public DbManagementControllerBuilder AddMessage(string message, string year, DbManagementServiceContainer serviceContainer)
         {
             Func<DbManagementServiceContainer> action = () =>
             {
@@ -64,7 +65,8 @@ namespace AD.DatabaseManagementApi
                 }
                 return serviceContainer;
             };
-            return action;
+            _messages.Add(action);
+            return this;
         }
 
         private IDictionary<string, string> HandleParameters()
