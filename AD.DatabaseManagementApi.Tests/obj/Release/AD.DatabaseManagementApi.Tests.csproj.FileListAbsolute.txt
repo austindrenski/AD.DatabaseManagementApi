@@ -14,3 +14,8 @@ C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagem
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.dll
 C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.pdb
+C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Release\DatabaseManagementApiTests.dll
+C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Release\DatabaseManagementApiTests.pdb
+C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.dll
+C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.pdb
