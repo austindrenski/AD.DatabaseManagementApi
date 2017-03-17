@@ -13,7 +13,7 @@ namespace AD.DatabaseManagementApi
         [NotNull]
         public DbManagementController Build()
         {
-            return new DbManagementController(_messages.Where(x => x != null).Select(x => x()));
+            return new DbManagementController(_messages.Select(x => x()).Where(x => x != null));
         }
 
         [NotNull]
