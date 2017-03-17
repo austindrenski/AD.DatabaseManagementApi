@@ -51,8 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\DbManagementController.cs" />
     <Compile Include="src\DbManagementControllerBuilder.cs" />
-    <Compile Include="src\DbManagementServiceContainer.cs" />
     <Compile Include="src\DbManagementService.cs" />
+    <Compile Include="src\IDbManagementService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

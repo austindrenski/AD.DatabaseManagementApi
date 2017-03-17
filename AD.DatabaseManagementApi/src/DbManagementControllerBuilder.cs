@@ -9,7 +9,7 @@ namespace AD.DatabaseManagementApi
     [PublicAPI]
     public class DbManagementControllerBuilder
     {
-        private readonly IList<Func<DbManagementServiceContainer>> _messages = new List<Func<DbManagementServiceContainer>>();
+        private readonly IList<Func<IDbManagementService>> _messages = new List<Func<IDbManagementService>>();
 
         public DbManagementControllerBuilder()
         {
@@ -22,9 +22,9 @@ namespace AD.DatabaseManagementApi
         }
 
         [NotNull]
-        public DbManagementControllerBuilder AddMessage([NotNull] string message, [NotNull] DbManagementServiceContainer serviceContainer)
+        public DbManagementControllerBuilder AddMessage([NotNull] string message, [NotNull] IDbManagementService service)
         {
-            Func<DbManagementServiceContainer> action = () =>
+            Func<IDbManagementService> action = () =>
             {
                 while (true)
                 {
@@ -33,7 +33,7 @@ namespace AD.DatabaseManagementApi
                     string response = Console.ReadLine() ?? "";
                     if (response.Equals("Y", StringComparison.OrdinalIgnoreCase))
                     {
-                        return serviceContainer;
+                        return service;
                     }
                     if (response.Equals("N", StringComparison.OrdinalIgnoreCase))
                     {

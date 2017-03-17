@@ -7,20 +7,20 @@ using JetBrains.Annotations;
 namespace AD.DatabaseManagementApi
 {
     /// <summary>
-    /// Encapsulates a <see cref="DbContext"/> and a collection of <see cref="DbManagementServiceContainer"/> objects.
+    /// Encapsulates a <see cref="DbContext"/> and an enumerable collection of <see cref="IDbManagementService"/> objects.
     /// </summary>
     [PublicAPI]
     public class DbManagementController
     {
         [NotNull]
         [ItemNotNull]
-        private readonly IEnumerable<DbManagementServiceContainer> _services;
+        private readonly IEnumerable<IDbManagementService> _services;
 
         /// <summary>
-        /// Constructs a <see cref="DbManagementController"/> for a given <see cref="DbContext"/> and a collection of <see cref="DbManagementServiceContainer"/> objects.
+        /// Constructs a <see cref="DbManagementController"/> for a given enumerable collection of <see cref="IDbManagementService"/> objects.
         /// </summary>
-        /// <param name="services">An enumerable collection of <see cref="DbManagementServiceContainer"/> objects, each of which encapsulate a service to execute against the database.</param>
-        public DbManagementController([NotNull][ItemNotNull]  IEnumerable<DbManagementServiceContainer> services) 
+        /// <param name="services">An enumerable collection of <see cref="IDbManagementService"/> objects encapsulating services to execute against the database.</param>
+        public DbManagementController([NotNull][ItemNotNull] IEnumerable<IDbManagementService> services) 
         {
             _services = services;
         }
@@ -36,7 +36,7 @@ namespace AD.DatabaseManagementApi
             Console.WriteLine($"Executing services at {startTime.ToShortTimeString()}. Please wait...");
             int total = _services.Count();
             int index = 1;
-            foreach (DbManagementServiceContainer service in _services)
+            foreach (IDbManagementService service in _services)
             {
                 Console.WriteLine();
                 Console.WriteLine($"> Starting service {index++} of {total} at {currentTime}: {service.Name}.");

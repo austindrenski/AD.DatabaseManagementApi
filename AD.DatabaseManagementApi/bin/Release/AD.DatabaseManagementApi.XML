@@ -6,42 +6,19 @@
     <members>
         <member name="T:AD.DatabaseManagementApi.DbManagementController">
             <summary>
-            Encapsulates a <see cref="T:System.Data.Entity.DbContext"/> and a collection of <see cref="T:AD.DatabaseManagementApi.DbManagementServiceContainer"/> objects.
+            Encapsulates a <see cref="T:System.Data.Entity.DbContext"/> and an enumerable collection of <see cref="T:AD.DatabaseManagementApi.IDbManagementService"/> objects.
             </summary>
         </member>
-        <member name="M:AD.DatabaseManagementApi.DbManagementController.#ctor(System.Collections.Generic.IEnumerable{AD.DatabaseManagementApi.DbManagementServiceContainer})">
+        <member name="M:AD.DatabaseManagementApi.DbManagementController.#ctor(System.Collections.Generic.IEnumerable{AD.DatabaseManagementApi.IDbManagementService})">
             <summary>
-            Constructs a <see cref="T:AD.DatabaseManagementApi.DbManagementController"/> for a given <see cref="T:System.Data.Entity.DbContext"/> and a collection of <see cref="T:AD.DatabaseManagementApi.DbManagementServiceContainer"/> objects.
+            Constructs a <see cref="T:AD.DatabaseManagementApi.DbManagementController"/> for a given enumerable collection of <see cref="T:AD.DatabaseManagementApi.IDbManagementService"/> objects.
             </summary>
-            <param name="services">An enumerable collection of <see cref="T:AD.DatabaseManagementApi.DbManagementServiceContainer"/> objects, each of which encapsulate a service to execute against the database.</param>
+            <param name="services">An enumerable collection of <see cref="T:AD.DatabaseManagementApi.IDbManagementService"/> objects encapsulating services to execute against the database.</param>
         </member>
         <member name="M:AD.DatabaseManagementApi.DbManagementController.Invoke">
             <summary>
             Call this method to begin executing services.
             </summary>
-        </member>
-        <member name="T:AD.DatabaseManagementApi.DbManagementServiceContainer">
-            <summary>
-            Encapsulates a <see cref="T:AD.DatabaseManagementApi.DbManagementService"/>.
-            </summary>
-        </member>
-        <member name="P:AD.DatabaseManagementApi.DbManagementServiceContainer.Name">
-            <summary>
-            The name of this service container.
-            </summary>
-        </member>
-        <member name="M:AD.DatabaseManagementApi.DbManagementServiceContainer.#ctor(AD.DatabaseManagementApi.DbManagementService,System.String)">
-            <summary>
-            Constructs a <see cref="T:AD.DatabaseManagementApi.DbManagementServiceContainer"/> to encapsulate a <see cref="T:AD.DatabaseManagementApi.DbManagementService"/>.
-            </summary>
-            <param name="service">The <see cref="T:AD.DatabaseManagementApi.DbManagementService"/> to execute against the database.</param>
-            <param name="name">The name of the service.</param>
-        </member>
-        <member name="M:AD.DatabaseManagementApi.DbManagementServiceContainer.Execute">
-            <summary>
-            Executes the contained service against a <see cref="T:System.Data.Entity.DbContext"/>.
-            </summary>
-            <returns>The count of records affected by the service.</returns>
         </member>
         <member name="T:AD.DatabaseManagementApi.DbManagementService">
             <summary>
@@ -58,18 +35,40 @@
             The parameters used by this service.
             </summary>
         </member>
-        <member name="M:AD.DatabaseManagementApi.DbManagementService.#ctor(System.Data.Entity.DbContext,System.Collections.Generic.IDictionary{System.String,System.String})">
+        <member name="P:AD.DatabaseManagementApi.DbManagementService.Name">
+            <summary>
+            The name of this service.
+            </summary>
+        </member>
+        <member name="M:AD.DatabaseManagementApi.DbManagementService.#ctor(System.Data.Entity.DbContext,System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
             <summary>
             Constructs a <see cref="T:AD.DatabaseManagementApi.DbManagementService"/> encapsulating a series of database operations.
             </summary>
             <param name="context">The <see cref="T:System.Data.Entity.DbContext"/> against which the service is executed.</param>
             <param name="parameters">The parameters used by this service.</param>
+            <param name="name">The name of this service.</param>
         </member>
         <member name="M:AD.DatabaseManagementApi.DbManagementService.Execute">
             <summary>
             Executes the service.
             </summary>
-            <returns></returns>
+            <returns>The number of records affected by this service.</returns>
+        </member>
+        <member name="T:AD.DatabaseManagementApi.IDbManagementService">
+            <summary>
+            Defines a service operation.
+            </summary>
+        </member>
+        <member name="P:AD.DatabaseManagementApi.IDbManagementService.Name">
+            <summary>
+            The name of this service.
+            </summary>
+        </member>
+        <member name="M:AD.DatabaseManagementApi.IDbManagementService.Execute">
+            <summary>
+            Executes the service.
+            </summary>
+            <returns>The number of records affected by this service.</returns>
         </member>
     </members>
 </doc>
