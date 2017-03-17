@@ -20,6 +20,22 @@
             Call this method to begin executing services.
             </summary>
         </member>
+        <member name="T:AD.DatabaseManagementApi.DbManagementControllerBuilder">
+            <summary>
+            Builds an immutable <see cref="T:AD.DatabaseManagementApi.DbManagementController"/>.
+            </summary>
+        </member>
+        <member name="M:AD.DatabaseManagementApi.DbManagementControllerBuilder.Build">
+            <summary>
+            Constructs an immutable <see cref="T:AD.DatabaseManagementApi.DbManagementController"/> from this <see cref="T:AD.DatabaseManagementApi.DbManagementControllerBuilder"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AD.DatabaseManagementApi.DbManagementControllerBuilder.AddMessage(System.String,System.Func{AD.DatabaseManagementApi.IDbManagementService})">
+            <summary>
+            Adds a message and function to the builder. The function should return an <see cref="T:AD.DatabaseManagementApi.IDbManagementService"/>.
+            </summary>
+        </member>
         <member name="T:AD.DatabaseManagementApi.DbManagementService">
             <summary>
             Encapsulates a service to be executed against a <see cref="T:System.Data.Entity.DbContext"/>.
