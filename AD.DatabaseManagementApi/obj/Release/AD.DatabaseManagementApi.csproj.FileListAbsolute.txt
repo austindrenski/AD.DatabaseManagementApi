@@ -33,4 +33,3 @@ C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi\bin\Release\En
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi\bin\Release\JetBrains.Annotations.xml
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.dll
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.pdb
-C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi\obj\Release\AD.DatabaseManagementApi.csprojResolveAssemblyReference.cache

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using JetBrains.Annotations;
 
@@ -11,12 +10,8 @@ namespace AD.DatabaseManagementApi
     {
         private readonly IList<Func<IDbManagementService>> _messages = new List<Func<IDbManagementService>>();
 
-        public DbManagementControllerBuilder()
-        {
-        }
-
         [NotNull]
-        public DbManagementController Build([NotNull] DbContext context)
+        public DbManagementController Build()
         {
             return new DbManagementController(_messages.Where(x => x != null).Select(x => x()));
         }
