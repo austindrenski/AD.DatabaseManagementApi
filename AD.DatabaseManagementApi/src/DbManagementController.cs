@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Data.Entity;
 using System.Linq;
 using JetBrains.Annotations;
@@ -22,7 +23,7 @@ namespace AD.DatabaseManagementApi
         /// <param name="services">An enumerable collection of <see cref="IDbManagementService"/> objects encapsulating services to execute against the database.</param>
         public DbManagementController([NotNull][ItemNotNull] IEnumerable<IDbManagementService> services) 
         {
-            _services = services;
+            _services = services is ImmutableArray<IDbManagementService> ? services : services.ToImmutableArray();
         }
 
         /// <summary>

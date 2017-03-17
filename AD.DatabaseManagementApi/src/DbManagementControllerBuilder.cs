@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
+using System.Collections.Immutable;
 
 namespace AD.DatabaseManagementApi
 {
@@ -13,7 +14,7 @@ namespace AD.DatabaseManagementApi
         [NotNull]
         public DbManagementController Build()
         {
-            return new DbManagementController(_messages.Select(x => x()).Where(x => x != null));
+            return new DbManagementController(_messages.Select(x => x()).Where(x => x != null).ToImmutableArray());
         }
 
         [NotNull]
