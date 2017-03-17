@@ -22,7 +22,7 @@ namespace AD.DatabaseManagementApi
         }
 
         [NotNull]
-        public DbManagementControllerBuilder AddMessage([NotNull] string message, [NotNull] string year, [NotNull] DbManagementServiceContainer serviceContainer)
+        public DbManagementControllerBuilder AddMessage([NotNull] string message, [NotNull] DbManagementServiceContainer serviceContainer)
         {
             Func<DbManagementServiceContainer> action = () =>
             {

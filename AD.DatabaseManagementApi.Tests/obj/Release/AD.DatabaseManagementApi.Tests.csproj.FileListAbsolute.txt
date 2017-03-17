@@ -19,3 +19,4 @@ C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Rele
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.dll
 C:\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\DatabaseManagementApiTests.pdb
+C:\Users\austin.drenski\Source\Repos\AD.DatabaseManagementApi\AD.DatabaseManagementApi.Tests\obj\Release\AD.DatabaseManagementApi.Tests.csprojResolveAssemblyReference.cache
