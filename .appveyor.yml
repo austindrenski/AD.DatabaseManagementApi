@@ -1,5 +1,5 @@
 before_build:
-  - cmd: nuget restore HeaderArrayConverter.sln
+  - cmd: nuget restore AD.DatabaseManagementApi.sln
 
 configuration: 
   - Release
