@@ -1,5 +1,8 @@
 # AD.DatabaseManagementApi
 C# framework for executing queued database management tasks.
+
+![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/austindrenski/AD.DatabaseManagementApi?svg=true)
+
 ## Install from NuGet:
 ```Powershell
 PM> Install-Package AD.DatabaseManagementApi
